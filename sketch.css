@@ -1,0 +1,68 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: white;
+  background: linear-gradient(to bottom, #485563 0%, #29323c 100%);
+  background-size: cover;
+}
+canvas {
+  border: 20px solid #2c2e43;
+  border-radius: 10px;
+  width: 800px;
+  height: 500px;
+  background: white;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.473);
+}
+canvas.shake {
+  animation: shake 0.5s linear 1;
+}
+button {
+  width: 15%;
+  height: 35px;
+  border: none;
+  color: #fff;
+  margin-left: 7px;
+  font-size: 16px;
+  outline: none;
+  background: #464358;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.473);
+  border-radius: 3px;
+  opacity: 0.7;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+.header {
+  color: #dbe6fd;
+  font-weight: 400;
+  font-size: 55px;
+  font-family: "Gloria Hallelujah", cursive;
+}
+.sub-text {
+  font-family: "Gloria Hallelujah", cursive;
+  color: #dbe6fd;
+  font-weight: 200;
+  font-size: 15px;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
